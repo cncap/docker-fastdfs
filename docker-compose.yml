@@ -17,7 +17,6 @@ services:
         networks: 
           - iot_storage
     fastdfsstorage:
-        restart: always
         image: evan1120/fastdfs_storage
         hostname: fastdfs-storage
         volumes:
