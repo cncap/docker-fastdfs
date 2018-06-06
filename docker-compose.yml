@@ -15,7 +15,7 @@ services:
            max_attempts: 6
            window: 30s
         networks: 
-          -"iot-storage"
+          - iot-storage
     fastdfsstorage:
         restart: always
         image: evan1120/fastdfs_storage
@@ -33,7 +33,7 @@ services:
            max_attempts: 6
            window: 30s          
         networks: 
-          -"iot-storage"
+          - iot-storage
 networks:
    iot-storage:
      driver:host
