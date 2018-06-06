@@ -14,8 +14,7 @@ services:
            delay: 5s
            max_attempts: 6
            window: 30s
-        networks: 
-          - host
+        network_mode: host
     fastdfsstorage:
         image: evan1120/fastdfs_storage
         hostname: fastdfs-storage
@@ -31,5 +30,4 @@ services:
            delay: 5s
            max_attempts: 6
            window: 30s          
-        networks: 
-          - host
+        network_mode: host
