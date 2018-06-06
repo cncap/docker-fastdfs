@@ -15,7 +15,7 @@ services:
            max_attempts: 6
            window: 30s
         networks: 
-          - iot_storage
+          - host
     fastdfsstorage:
         image: evan1120/fastdfs_storage
         hostname: fastdfs-storage
@@ -32,7 +32,4 @@ services:
            max_attempts: 6
            window: 30s          
         networks: 
-          - iot_storage
-networks:
-   iot_storage:
-     driver: host
+          - host
